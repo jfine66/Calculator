@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.parent-div {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(6, 16.7%);
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    border: black solid 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto
+}
+
+.btn {
+    background-color: grey;
+    margin: 1px;
+    padding: 25px;
+}
+
+.btn:hover {
+   background-color: white;
+   color: black
+}
+
+.operand {
+    background-color: orange;
+    color: white;
+}
+
+.equals {
+    background-color: orange;
+    color: white;
+}
+
+.text {
+    grid-column: span 4;
+    justify-self: flex-end;
+    color: white;
+    font-size: 30px;
+}
+
+.clear {
+    grid-column: span 2;
+}
+
+.zero {
+    grid-column: span 3;
+}
